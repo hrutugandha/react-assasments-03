@@ -1,0 +1,62 @@
+/* src/ProductCarousel.css */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  min-width: 20%; /* 5 cards visible */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.nav-button.left {
+  left: 10px;
+}
+
+.nav-button.right {
+  right: 10px;
+}
+
+.dot-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
